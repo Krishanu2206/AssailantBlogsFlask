@@ -1,0 +1,15 @@
+<h1>HELLO WORLD</h1>
+<p>This is me!</p>
+<p>{{ stuff|trim }}</p>
+<h3>Favourite Pizzas:</h3>
+{% for i in pizza: %}
+    {% if i == 42 %}
+        {{i + 100}}<br/>
+    {% else %}
+        {{i}}</br>
+    {% endif %}
+{% endfor %}
+{{ pizza.2|reverse }}
+
+
+
